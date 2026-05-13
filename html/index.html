@@ -1,144 +1,213 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Charlie Lake</title>
-<link rel="stylesheet" href="../css/navigation.css">
-<link rel="stylesheet" href="../css/index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Charlie Lake</title>
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
+    <nav>
+        <div class="nav-container">
 
-<nav>
-    <div class="nav-container">
+            <h1 class="logo">Charlie Lake</h1>
 
-        <h1 class="logo">Charlie Lake</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
-        <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <div class="nav-actions">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
 
-        <div class="nav-actions">
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <button class="btn-download">Download CV</button>
             </div>
 
-            <button class="btn-download">Download CV</button>
         </div>
+    </nav>
 
-    </div>
-</nav>
-
-<section>
-    <div class="hero">
-        <div class="hero-intro">
-            <span class="hero-badge">
-                <p>Hi, I'm Charlie!</p>
-            </span>
-            <h1 class="title">
-                Front-end Developer & <br>
-                <span class="highlight">UX Designer</span> 
-            </h1>
-            <p>Computer Science graduate who loves building clean, accessible and user friendly web experiences.</p>
-            <button class="btn-hero-projects">View Projects</button>
-            <button class="btn-hero-download">Download CV</button>
-        </div>
-        <div class="hero-image">
-            <img src="../images/ProjectImg.png" class="hero-project-img">
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="featured-work">
-    <div class="projects-header">
-
-            <div class="projects-title">
-                <p class="section-label">FEATURED WORK</p>
-                <h3>Featured Projects</h3>
+    <section>
+        <div class="hero">
+            <div class="hero-intro">
+                <span class="hero-badge">
+                    <p>Hi, I'm Charlie!</p>
+                </span>
+                <h1 class="title">
+                    Front-end Developer & <br>
+                    <span class="highlight">UX Designer</span> 
+                </h1>
+                <p>Computer Science graduate who loves building clean, accessible and user friendly web experiences.</p>
+                <button class="btn-hero-projects">View Projects</button>
+                <button class="btn-hero-download">Download CV</button>
             </div>
-
-            <a href="#" class="view-projects">
-                View all projects
-            </a>
-
+            <div class="hero-image">
+                <img src="../images/ProjectImg.png" class="hero-project-img">
+            </div>
         </div>
-        
-        <div class="cards-container">
+    </section>
 
-            <div class="featured-card">
-                <img src="../images/ProjectImg1.png">
-                <div class="featured-card-content">
-                    <p><b>AcaTrack - Academic Porftfolio Tracking</b></p>
-                    <p>A website that allows academics to track and mange their portfolio</p>
+    <section>
+        <div class="featured-work">
+            <div class="projects-header">
 
-                    <ul class="tech-tags">
-                        <li class="tag tag-html">HTML</li>
-                        <li class="tag tag-css">CSS</li>
-                        <li class="tag tag-javascript">JavaScript</li>
-                        <li class="tag tag-php">PHP</li>
-                        <li class="tag tag-mysql">MySQL</li>
-                        <li class="tag tag-chartjs">Chart.js</li>
-                    </ul>
-                    <div class="featured-card-buttons">
-                        <button>Live Demo</button>
-                        <button>GitHub</button>
+                <div class="projects-title">
+                    <p class="section-label">FEATURED WORK</p>
+                    <h3>Featured Projects</h3>
+                </div>
+
+                <a href="#" class="view-projects">
+                    View all projects
+                </a>
+
+            </div>
+                
+            <div class="cards-container">
+
+                <div class="featured-card">
+                    <img src="../images/ProjectImg1.png">
+                    <div class="featured-card-content">
+                        <p><b>AcaTrack - Academic Porftfolio Tracking</b></p>
+                        <p>A website that allows academics to track and mange their portfolio</p>
+
+                        <ul class="tech-tags">
+                            <li class="tag tag-html">HTML</li>
+                            <li class="tag tag-css">CSS</li>
+                            <li class="tag tag-javascript">JavaScript</li>
+                            <li class="tag tag-php">PHP</li>
+                            <li class="tag tag-mysql">MySQL</li>
+                            <li class="tag tag-chartjs">Chart.js</li>
+                        </ul>
+                        <div class="featured-card-buttons">
+                            <button>Live Demo</button>
+                            <button>GitHub</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="featured-card">
-                <img src="../images/project2.png">
+                <div class="featured-card">
+                    <img src="../images/project2.png">
 
-                <div class="featured-card-content">
-                    <p><b>Garden Guardian</b></p>
-                    <p>UX research and design of a plant care and diagnosis application.</p>
+                    <div class="featured-card-content">
+                        <p><b>Garden Guardian</b></p>
+                        <p>UX research and design of a plant care and diagnosis application.</p>
 
-                    <ul class="tech-tags">
-                        <li class="tag tag-figma">Figma</li>
-                        <li class="tag tag-css">Prototype</li>
-                        <li class="tag tag-javascript">Wireframe</li>
-                        <li class="tag tag-php">UX Research</li>
-                        <li class="tag tag-mysql">UI Design</li>
-                    </ul>
-                    <div class="featured-card-buttons">
-                        <button>Case Study</button>
+                        <ul class="tech-tags">
+                            <li class="tag tag-figma">Figma</li>
+                            <li class="tag tag-css">Prototype</li>
+                            <li class="tag tag-javascript">Wireframe</li>
+                            <li class="tag tag-php">UX Research</li>
+                            <li class="tag tag-mysql">UI Design</li>
+                        </ul>
+                        <div class="featured-card-buttons">
+                            <button>Case Study</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="featured-card">
-                <img src="../images/ProjectImg.png">
-                <div class="featured-card-content">
-                    <p><b>Brand New Bookshelf</b></p>
-                    <p>An e-commerce bookstore to buy and sell books.</p>
+                <div class="featured-card">
+                    <img src="../images/ProjectImg.png">
+                    <div class="featured-card-content">
+                        <p><b>Brand New Bookshelf</b></p>
+                        <p>An e-commerce bookstore to buy and sell books.</p>
 
-                    <ul class="tech-tags">
-                        <li class="tag tag-html">HTML</li>
-                        <li class="tag tag-css">CSS</li>
-                        <li class="tag tag-javascript">JavaScript</li>
-                        <li class="tag tag-php">PHP</li>
-                        <li class="tag tag-mysql">MySQL</li>
-                        <li class="tag tag-chartjs">Chart.js</li>
-                    </ul>
-                    <div class="featured-card-buttons">
-                        <button>Live Demo</button>
-                        <button>GitHub</button>
+                        <ul class="tech-tags">
+                            <li class="tag tag-html">HTML</li>
+                            <li class="tag tag-css">CSS</li>
+                            <li class="tag tag-javascript">JavaScript</li>                        
+                            <li class="tag tag-php">PHP</li>
+                            <li class="tag tag-mysql">MySQL</li>
+                            <li class="tag tag-chartjs">Chart.js</li>
+                        </ul>
+                        <div class="featured-card-buttons">
+                            <button>Live Demo</button>
+                            <button>GitHub</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section>
+        <div class="case-study-highlight">
+            <div class="case-study-container">
+
+                <div class="case-study-img">
+                    <img src="../images/GardenGuardianCaseStudy.png">
+                </div>
+
+                <div class="case-study-content">
+                   
+                    <div class="projects-title">
+                    <p class="section-label">CASE STUDY</p>
+                    <h3>Garden Guardian</h3>
+                    <p>New plant owners often struggle to identify issues and know how to care for their plants</p>
+
+                    <ul class="case-study-steps">
+
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Research</span>
+                        </li>
+
+                        <li class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <span>User Persona</span>
+                        </li>
+
+                        <li class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <span>Wireframes</span>
+                        </li>
+
+                        <li class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>Prototype</span>
+                        </li>
+
+                        <li class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Testing</span>
+                        </li>
+
+                    </ul>
+
+                    <button class="case-study-btn">
+                        View Case Study
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </body>
