@@ -307,7 +307,7 @@
 
     border: none;
     border-radius: 14px;
-    background-color: #4d8b4f;
+    background-color: #2563eb;
 
     color: white;
     font-size: 18px;
@@ -315,7 +315,7 @@
 
     cursor: pointer;
 
-    box-shadow: 0 8px 20px rgba(77, 139, 79, 0.25);
+    box-shadow: 0 8px 20px rgba(77, 91, 139, 0.25);
 
     transition: all 0.25s ease;
 }
@@ -323,9 +323,9 @@
 .case-study-btn:hover {
     transform: translateY(-2px);
 
-    background-color: #3f7441;
+    background-color: #1d4cb3;
 
-    box-shadow: 0 12px 24px rgba(77, 139, 79, 0.35);
+    box-shadow: 0 12px 24px rgba(77, 91, 139, 0.35);
 }
 
 .personal-section {
@@ -409,6 +409,32 @@
     box-shadow: 12px 13px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-.about-card p {
-    margin-right: 35%;
+.about-description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
 }
+
+.about-features {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.feature-item i {
+    font-size: 25px;
+    margin: 10px 0 0 0;
+}
+
+.feature-text h4, p {
+    margin: 10px 5px 0 5px;
+}
+
