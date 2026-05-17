@@ -24,8 +24,9 @@
     display: inline-block;
     background-color: #2563eb20;
     color: #2563eb;
-    padding: 0px 5px;
+    padding: 2px 6px;
     border-radius: 40px;
+    justify-content: center;
 }
 
 .title {
@@ -37,24 +38,54 @@
     color: #2563eb;
 }
 
-.btn-hero-download {
-    border: none;
-    background-color: #ffffff;
+.hero-intro button {
     margin: 10px;
-    color: black;
-    padding: 15px 30px;
+}
+
+.btn-hero-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+
+    border: none;
     border-radius: 10px;
-    box-shadow: 12px 13px 15px 0px rgba(1, 0, 0, 0.1);
+    background-color: white;
+
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(77, 91, 139, 0.25);
+    transition: all 0.25s ease;
+}
+
+.btn-hero-download:hover {
+    transform: translateY(-2px);
+    background-color: #bdc3d1;
+    box-shadow: 0 12px 24px rgba(148, 174, 236, 0.356);
 }
 
 .btn-hero-projects {
-    background-color: #2563EB;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+
     border: none;
-    margin: 10px;
-    color: #ffffff;
-    padding: 15px 30px;
     border-radius: 10px;
-    box-shadow: 12px 13px 15px 0px rgba(1, 0, 0, 0.1);
+    background-color: #2563eb;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(77, 91, 139, 0.25);
+    transition: all 0.25s ease;
 }
 
 .hero-image {
@@ -320,11 +351,9 @@
     transition: all 0.25s ease;
 }
 
-.case-study-btn:hover {
+.case-study-btn:hover, .btn-hero-projects:hover  {
     transform: translateY(-2px);
-
     background-color: #1d4cb3;
-
     box-shadow: 0 12px 24px rgba(77, 91, 139, 0.35);
 }
 

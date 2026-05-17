@@ -63,10 +63,27 @@ nav {
 }
 
 .btn-download {
-    background-color: #2563EB;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+
     border: none;
-    margin: 10px;
-    color: #ffffff;
-    padding: 15px;
     border-radius: 10px;
+    background-color: #2563eb;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(77, 91, 139, 0.25);
+    transition: all 0.25s ease;
+}
+
+.btn-download:hover{
+    transform: translateY(-2px);
+    background-color: #1d4cb3;
+    box-shadow: 0 12px 24px rgba(77, 91, 139, 0.35);
 }
