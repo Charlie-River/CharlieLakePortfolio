@@ -24,7 +24,7 @@
     display: inline-block;
     background-color: #2563eb20;
     color: #2563eb;
-    padding: 2px 6px;
+    padding: 0px 6px;
     border-radius: 40px;
     justify-content: center;
 }
@@ -351,7 +351,7 @@
     transition: all 0.25s ease;
 }
 
-.case-study-btn:hover, .btn-hero-projects:hover  {
+.case-study-btn:hover, .btn-hero-projects:hover {
     transform: translateY(-2px);
     background-color: #1d4cb3;
     box-shadow: 0 12px 24px rgba(77, 91, 139, 0.35);
@@ -463,7 +463,113 @@
     margin: 10px 0 0 0;
 }
 
-.feature-text h4, p {
+.feature-text h4, .feature-text p {
     margin: 10px 5px 0 5px;
+}
+
+.contact-section {
+    width: 95%;
+    padding: 0px 10px;
+    margin: 0 2.5%;
+    background-color: white;
+
+    border-radius: 20px;
+    box-shadow: 12px 13px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.4fr;
+  gap: 40px;
+  padding: 50px;
+  align-items: center;
+}
+
+.contact-intro h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.contact-intro p {
+  font-size: 18px;
+  color: #475569;
+  margin: 6px 0;
+}
+
+.contact-btn,
+.contact-form button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 14px 26px;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact-item i {
+  font-size: 28px;
+  color: #0f172a;
+  width: 32px;
+}
+
+.contact-item h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-item p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    background-color: #1d4cb3;
+    box-shadow: 0 12px 24px rgba(77, 91, 139, 0.35);
 }
 
