@@ -1,6 +1,10 @@
+a {
+    text-decoration: none;
+}
+
 /* 
    HERO SECTION
- */
+*/
 
 .hero {
     max-width: 1400px;
@@ -19,6 +23,7 @@
 
 .hero-badge {
     display: inline-block;
+
     background-color: #2563eb20;
     color: #2563eb;
 
@@ -27,10 +32,6 @@
 
     font-weight: 700;
     margin-bottom: 18px;
-}
-
-.hero-badge p {
-    margin: 0;
 }
 
 .title {
@@ -52,8 +53,10 @@
     font-weight: 600;
 }
 
-.hero-intro button {
-    margin-right: 12px;
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .btn-hero-projects,
@@ -69,6 +72,7 @@
 
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
 
     cursor: pointer;
     transition: all 0.25s ease;
@@ -90,7 +94,8 @@
 
 .btn-hero-projects:hover,
 .case-study-btn:hover,
-.contact-btn:hover {
+.contact-btn:hover,
+.contact-form button:hover {
     transform: translateY(-2px);
     background-color: #1d4cb3;
     box-shadow: 0 12px 24px rgba(77, 91, 139, 0.35);
@@ -123,7 +128,7 @@
 
 /*
    FEATURED WORK
- */
+*/
 
 .featured-work,
 .contact-section {
@@ -167,6 +172,10 @@
     text-decoration: none;
     color: #2563eb;
     font-weight: 600;
+}
+
+.view-projects:hover {
+    color: #1d4cb3;
 }
 
 .cards-container {
@@ -291,7 +300,11 @@
     gap: 20px;
 }
 
-.featured-card button {
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
     color: #2563eb;
     background-color: transparent;
 
@@ -300,13 +313,21 @@
     font-size: 16px;
     font-weight: 700;
 
+    text-decoration: none;
+
     cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.card-btn:hover {
+    transform: translateY(-2px);
+    color: #1d4cb3;
 }
 
 
 /* 
    CASE STUDY HIGHLIGHT
- */
+*/
 
 .case-study-highlight {
     width: 95%;
@@ -342,6 +363,10 @@
 
 .case-study-content {
     padding: 20px;
+}
+
+.case-study-content p {
+    line-height: 1.6;
 }
 
 .case-study-steps {
@@ -380,6 +405,7 @@
     align-items: center;
     gap: 10px;
 
+    margin-top: 20px;
     padding: 16px 28px;
 
     border: none;
@@ -390,6 +416,7 @@
 
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
 
     cursor: pointer;
 
@@ -397,9 +424,10 @@
     transition: all 0.25s ease;
 }
 
+
 /*
    PERSONAL SECTION
- */
+*/
 
 .personal-section {
     width: 95%;
@@ -419,6 +447,12 @@
 
     border-radius: 20px;
     box-shadow: 12px 13px 15px rgba(0, 0, 0, 0.12);
+}
+
+.skills-card h3,
+.about-card h3 {
+    margin-top: 0;
+    font-size: 28px;
 }
 
 .skills-list-container {
@@ -505,7 +539,7 @@
 
 /* 
    CONTACT SECTION
- */
+*/
 
 .contact-container {
     display: grid;
@@ -546,6 +580,7 @@
 
     text-decoration: none;
     font-weight: 700;
+    font-family: inherit;
 
     cursor: pointer;
     transition: all 0.25s ease;
@@ -609,4 +644,56 @@
 .contact-form textarea {
     min-height: 130px;
     resize: vertical;
+}
+
+
+/*
+   RESPONSIVE
+*/
+
+@media (max-width: 1000px) {
+    .hero,
+    .case-study-container,
+    .personal-section {
+        flex-direction: column;
+    }
+
+    .skills-card,
+    .about-card {
+        width: auto;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .projects-header,
+    .skills-list-container,
+    .about-features,
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-title h3 {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        padding: 30px 20px;
+    }
 }
