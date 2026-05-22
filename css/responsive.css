@@ -1,0 +1,67 @@
+
+@media (max-width: 1000px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-container {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .contact-intro h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero,
+    .case-study-container,
+    .personal-section {
+        flex-direction: column;
+    }
+
+    .skills-card,
+    .about-card {
+        width: auto;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .projects-header,
+    .skills-list-container,
+    .about-features,
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects-title h3 {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        padding: 30px 20px;
+    }
+}

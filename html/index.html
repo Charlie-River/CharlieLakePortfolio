@@ -6,7 +6,14 @@
     <title>Charlie Lake</title>
 
     <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/index.css">
+
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/hero.css">
+<link rel="stylesheet" href="../css/featured-work.css">
+<link rel="stylesheet" href="../css/case-study-highlights.css">
+<link rel="stylesheet" href="../css/personal-section.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,7 +98,7 @@
             </div>
 
             <a href="#featured-work" class="view-projects">
-                View all projects
+               <!-- View all projects -->
             </a>
         </div>
 
@@ -119,7 +126,7 @@
                             <i class="far fa-hand-pointer"></i>
                         </a>
 
-                        <a href="#" class="card-btn">
+                        <a href="https://github.com/Charlie-River/AcaTrack" class="card-btn">
                             GitHub
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -136,7 +143,7 @@
 
                     <ul class="tech-tags">
                         <li class="tag tag-figma">Figma</li>
-                        <li class="tag tag-css">Prototype</li>
+                        <li class="tag tag-prototype">Prototype</li>
                         <li class="tag tag-javascript">Wireframe</li>
                         <li class="tag tag-php">UX Research</li>
                         <li class="tag tag-mysql">UI Design</li>
@@ -159,24 +166,20 @@
                     <p>An e-commerce bookstore to buy and sell books.</p>
 
                     <ul class="tech-tags">
-                        <li class="tag tag-html">HTML</li>
-                        <li class="tag tag-css">CSS</li>
-                        <li class="tag tag-javascript">JavaScript</li>
-                        <li class="tag tag-php">PHP</li>
-                        <li class="tag tag-mysql">MySQL</li>
-                        <li class="tag tag-chartjs">Chart.js</li>
+                        <li class="tag tag-figma">Figma</li>
+                        <li class="tag tag-prototype">Prototype</li>
                     </ul>
 
                     <div class="featured-card-buttons">
-                        <a href="#" class="card-btn">
-                            Live Demo
+                        <a href="https://www.figma.com/proto/p8EMsWV1Ba7b8FA7WVw2jn/UX-Frontend-Task?node-id=11-809&t=CB8FEmwMylhzNdty-1" class="card-btn">
+                            Mobile Prototype
+                            <i class="far fa-hand-pointer"></i>
+                        </a>
+                        <a href="https://www.figma.com/proto/p8EMsWV1Ba7b8FA7WVw2jn/UX-Frontend-Task?node-id=1-2&t=XU533mhdOComP0su-1" class="card-btn">
+                            Web Prototype
                             <i class="far fa-hand-pointer"></i>
                         </a>
 
-                        <a href="#" class="card-btn">
-                            GitHub
-                            <i class="fa-brands fa-github"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -376,16 +379,60 @@
             </div>
         </div>
 
-        <form class="contact-form">
+        <form 
+            class="contact-form"
+            action="https://formspree.io/f/xojbwlgb"
+            method="POST"
+        >
+
+            <input 
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact Form Submission"
+            >
+
             <div class="form-row">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
+
+                <div class="input-group">
+                    <label for="name">Name</label>
+
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
             </div>
 
-            <textarea placeholder="Message"></textarea>
+            <div class="input-group">
+                <label for="message">Message</label>
+
+                <textarea 
+                    id="message"
+                    name="message"
+                    placeholder="Send a message"
+                    required
+                ></textarea>
+            </div>
 
             <button type="submit">
                 Send Message
+                <i class="fa-solid fa-paper-plane"></i>
             </button>
         </form>
 

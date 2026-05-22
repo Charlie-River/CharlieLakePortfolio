@@ -1,0 +1,136 @@
+.featured-work {
+    width: 95%;
+    margin: 40px auto;
+    padding: 10px;
+
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 12px 13px 15px rgba(0, 0, 0, 0.12);
+}
+
+.projects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.view-projects {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.view-projects:hover {
+    color: #1d4cb3;
+}
+
+.cards-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.featured-card {
+    flex: 1 1 320px;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    text-wrap: balance;
+
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.featured-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.featured-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 18px;
+}
+
+.featured-card p {
+    margin: 12px 0 0;
+    line-height: 1.4;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 18px 0;
+}
+
+.featured-card-buttons {
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.prototype-buttons {
+    flex-direction: column;
+    gap: 14px;
+}
+
+.prototype-buttons .card-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+
+    background-color: #f8fafc;
+}
+
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #2563eb;
+    background-color: transparent;
+
+    border: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.prototype-buttons:hover, .card-btn:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #f8faf7;
+    color: #0f172a;
+
+    font-family: "Manrope", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-label {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: #64748b;
+}
+
+.projects-title h3 {
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.tag {
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tag-html {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+.tag-css,
+.tag-prototype {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.tag-javascript {
+    background-color: #fef9c3;
+    color: #ca8a04;
+}
+
+.tag-php {
+    background-color: #ede9fe;
+    color: #7c3aed;
+}
+
+.tag-mysql {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.tag-figma {
+    background-color: #fce7f3;
+    color: #db2777;
+}
+
+.tag-chartjs {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
