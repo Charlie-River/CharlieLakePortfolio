@@ -1,67 +1,248 @@
+/* 
+   RESPONSIVE CSS
+   Applies to index.html and case-study.html
+*/
 
+/* Tablets */
 @media (max-width: 1000px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-}
 
-@media (max-width: 700px) {
-    .contact-container {
-        padding: 30px 20px;
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .form-row {
-        flex-direction: column;
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .contact-intro h2 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 1000px) {
     .hero,
     .case-study-container,
-    .personal-section {
+    .personal-section,
+    .hero-content,
+    .cta-section {
         flex-direction: column;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 50px 30px;
+    }
+
+    .hero-buttons,
+    .case-tags,
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img,
+    .case-study-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-card {
+        max-width: 100%;
     }
 
     .skills-card,
     .about-card {
-        width: auto;
+        width: 100%;
     }
 
-    .contact-container {
+    .skills-list-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .contact-container,
+    .info-grid,
+    .outcomes-grid {
         grid-template-columns: 1fr;
     }
 
-    .hero-image img {
-        width: 100%;
+    .process-timeline,
+    .screen-gallery {
+        flex-wrap: wrap;
+    }
+
+    .process-step,
+    .screen-card {
+        flex: 1 1 220px;
     }
 }
 
+
+/* Mobile */
 @media (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .nav-links {
+        padding: 0;
+        gap: 14px;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .hero {
         padding: 40px 20px;
+        gap: 30px;
     }
 
-    .title {
-        font-size: 36px;
+    .title,
+    .hero-text h1 {
+        font-size: 38px;
     }
 
-    .projects-header,
-    .skills-list-container,
-    .about-features,
+    .hero-intro > p,
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons,
+    .featured-card-buttons,
     .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-hero-projects,
+    .btn-hero-download,
+    .case-study-btn,
+    .primary-btn,
+    .secondary-btn,
+    .contact-btn,
+    .contact-form button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .featured-work,
+    .case-study-highlight,
+    .personal-section,
+    .contact-section,
+    .case-study-page {
+        width: 95%;
+    }
+
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .projects-title h3,
+    .process-section h2,
+    .showcase-section h2,
+    .cta-section h2 {
+        font-size: 30px;
+    }
+
+    .cards-container {
+        padding: 10px;
+    }
+
+    .featured-card img {
+        height: 220px;
+    }
+
+    .case-study-steps {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .projects-title h3 {
-        font-size: 32px;
+    .arrow {
+        display: none;
+    }
+
+    .skills-list-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-features {
+        flex-direction: column;
     }
 
     .contact-container {
         padding: 30px 20px;
+    }
+
+    .contact-intro h2 {
+        font-size: 34px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .overview-card,
+    .problem-goal-card,
+    .process-section,
+    .showcase-section,
+    .outcome-card,
+    .cta-section {
+        padding: 24px;
+    }
+
+    .screen-gallery {
+        justify-content: center;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 450px) {
+
+    .title,
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .projects-title h3 {
+        font-size: 28px;
+    }
+
+    .featured-card img {
+        height: 190px;
+    }
+
+    .tag,
+    .case-tags li {
+        font-size: 12px;
+    }
+
+    .tools-list li {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tools-list img {
+        width: 32px;
+        height: 32px;
     }
 }
